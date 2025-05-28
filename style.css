@@ -40,6 +40,10 @@ body {
     word-wrap: break-word;
 }
 
+.list-group-item {
+    color: #0000FF;
+}
+
 .footer {
     background-color: #343a40;
     color: white;
