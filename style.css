@@ -12,7 +12,10 @@ body {
 }
 
 .header {
-    background-color: #07516a;
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     padding: 20px;
     text-align: center;
@@ -42,4 +45,16 @@ body {
     color: white;
     padding: 15px;
     text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    .container h1, .container p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container h1, .container p {
+        font-size: 1.1rem;
+    }
 }
