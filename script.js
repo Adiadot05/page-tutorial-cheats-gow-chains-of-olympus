@@ -152,3 +152,96 @@ function copyToClipboard5() {
             console.error('Failed to copy text: ', err);
         });
 }
+
+function copyToClipboard6() {
+    // Ambil elemen code
+    const codeElement = document.getElementById('code6');
+    
+    // Buat teks yang disalin dari konten elemen code
+    const codeText = codeElement.innerText;
+
+    // Salin teks ke clipboard
+    navigator.clipboard.writeText(codeText)
+        .then(() => {
+            // Ganti ikon dan teks tombol
+            const copyButton = document.getElementById('copy-button6');
+            const copyIcon = document.getElementById('copy-icon6');
+            const copyText = document.getElementById('copy-text6');
+            
+            copyIcon.classList.remove('bi-copy');
+            copyIcon.classList.add('bi-check2');
+            copyText.textContent = 'Disalin';
+
+            // Reset tombol setelah 3 detik
+            setTimeout(() => {
+                copyIcon.classList.remove('bi-check2');
+                copyIcon.classList.add('bi-copy');
+                copyText.textContent = 'Copy Code';
+            }, 1000);
+        })
+        .catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+}
+
+function copyToClipboard7() {
+    // Ambil elemen code
+    const codeElement = document.getElementById('code7');
+    
+    // Buat teks yang disalin dari konten elemen code
+    const codeText = codeElement.innerText;
+
+    // Salin teks ke clipboard
+    navigator.clipboard.writeText(codeText)
+        .then(() => {
+            // Ganti ikon dan teks tombol
+            const copyButton = document.getElementById('copy-button7');
+            const copyIcon = document.getElementById('copy-icon7');
+            const copyText = document.getElementById('copy-text7');
+            
+            copyIcon.classList.remove('bi-copy');
+            copyIcon.classList.add('bi-check2');
+            copyText.textContent = 'Disalin';
+
+            // Reset tombol setelah 3 detik
+            setTimeout(() => {
+                copyIcon.classList.remove('bi-check2');
+                copyIcon.classList.add('bi-copy');
+                copyText.textContent = 'Copy Code';
+            }, 1000);
+        })
+        .catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+}
+
+function copyToClipboard8() {
+    // Ambil elemen code
+    const codeElement = document.getElementById('code8');
+    
+    // Buat teks yang disalin dari konten elemen code
+    const codeText = codeElement.innerText;
+
+    // Salin teks ke clipboard
+    navigator.clipboard.writeText(codeText)
+        .then(() => {
+            // Ganti ikon dan teks tombol
+            const copyButton = document.getElementById('copy-button8');
+            const copyIcon = document.getElementById('copy-icon8');
+            const copyText = document.getElementById('copy-text8');
+            
+            copyIcon.classList.remove('bi-copy');
+            copyIcon.classList.add('bi-check2');
+            copyText.textContent = 'Disalin';
+
+            // Reset tombol setelah 3 detik
+            setTimeout(() => {
+                copyIcon.classList.remove('bi-check2');
+                copyIcon.classList.add('bi-copy');
+                copyText.textContent = 'Copy Code';
+            }, 1000);
+        })
+        .catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+}
